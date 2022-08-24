@@ -1,0 +1,40 @@
+{% include "header.html" %}
+{% load static %}
+
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-1">
+            <div class="text">
+                <h4>Thoughts, stories and ideas</h4>
+            </div>
+        </div>
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+            <div class="detail-1">
+                <img src="/media/{{serviceDetails.service_img}}" alt="">
+            </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div class="main-data">
+                <div class="detail-btn">
+                    <button class="btn btn-light">Case Study</button>
+                    <button class="btn btn-light">Open Space</button>
+                </div>
+                <div class="blog-title">
+                    {{serviceDetails.service_title | safe}}
+                    <pre class="pre-details">3 years ago {{serviceDetails.service_author | safe}}: 3 min read</pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="desc">
+            {{serviceDetails.service_description | safe}}
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}

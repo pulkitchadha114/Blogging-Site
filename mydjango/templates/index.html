@@ -1,0 +1,241 @@
+{% include "header.html" %}
+{% load static %}
+
+
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-1">
+                <div class="text">
+                    <h4>Thoughts, stories and ideas</h4>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="first-blog">
+                    <img src="../static/images/blog-1.jpg" alt="">
+                    <div class="pinned-btn">
+                        <button class="btn btn-light">Pinned</button>
+                    </div>
+                    <div class="title-text">
+                        <h5>{{servicesData.0.service_author | safe}}</h5>
+                        <a href="/blogdetails/{{servicesData.0.new_slug}}">{{servicesData.0.service_title | safe}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-2">
+                        <div class="hello">
+                            <img src="../static/images/basket.jpg" alt="">
+                            <div class="overlay">
+                                <div class="pinned-btn1">
+                                    <button class="btn btn-light">Pinned</button>
+                                </div>
+                                <div class="title-text-1">
+                                    <h5>{{servicesData.1.service_author | safe}}</h5>
+                                    <a href="/blogdetails/{{servicesData.1.new_slug}}">{{servicesData.1.service_title | safe}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                 
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-2">
+                        <div class="hello">
+                            <div class="overlay-1">
+                                <div class="pinned-btn2">
+                                    <button class="btn btn-light">Pinned</button>
+                                </div>
+                                <div class="title-text-2">
+                                    <h5>{{servicesData.2.service_author | safe}}</h5>
+                                    <a href="/blogdetails/{{servicesData.2.new_slug}}">{{servicesData.2.service_title | safe}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-2">
+                        <div class="hello">
+                            <img src="../static/images/blog-2.jpg" alt="">
+                            <div class="overlay-2">
+                                <div class="pinned-btn3">
+                                    <button class="btn btn-light">Pinned</button>
+                                </div>
+                                <div class="title-text-3">
+                                    <h5>{{servicesData.3.service_author | safe}}</h5>
+                                    <a href="/blogdetails/{{servicesData.3.new_slug}}">{{servicesData.3.service_title | safe}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-2">
+                        <div class="hello">
+                            <img src="../static/images/blog-3.jpg" alt="">
+                            <div class="overlay-3">
+                                <div class="pinned-btn5">
+                                    <button class="btn btn-light">Pinned</button>
+                                </div>
+                                <div class="title-text-4">
+                                    <h5>{{servicesData.4.service_author | safe}}</h5>
+                                    <a href="/blogdetails/{{servicesData.4.new_slug}}">{{servicesData.4.service_title | safe}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row m-5">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="center-img">
+                <img src="../static/images/blog-4.jpg" alt="">
+                <div class="overlay-4">
+                <div class="title-text-5">
+                    <a href="/blogdetails/{{servicesData.5.new_slug}}">{{servicesData.5.service_title | safe}}</a>
+                    <h5>{{servicesData.5.service_author | safe}}</h5>
+                    <div class="pinned-btn6">
+                        <button class="btn btn-light">Case Study</button>
+                        <button class="btn btn-light">Open Space</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row m-5">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="center-img-1">
+                <img src="../static/images/blog-5.jpg" alt="">
+                <div class="overlay-5">
+                <div class="title-text-6">
+                    <a href="/blogdetails/{{servicesData.6.new_slug}}">{{servicesData.6.service_title | safe}}</a>
+                    <h4>{{servicesData.6.service_description | slice:":170" | safe}}</h4>
+                    <h5>{{servicesData.6.service_author | safe}}</h5>
+                    <div class="pinned-btn7">
+                        <button class="btn btn-light">Furniture</button>
+                        <button class="btn btn-light">Productivity</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row m-5">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="center-img-2">
+                <img src="../static/images/blog-6.jpg" alt="">
+                <div class="overlay-4">
+                <div class="title-text-7">
+                    <a href="/blogdetails/{{servicesData.7.new_slug}}">{{servicesData.7.service_title | safe}}</a>
+                    <h5>{{servicesData.7.service_author | safe}}</h5>
+                    <div class="pinned-btn6">
+                        <button class="btn btn-light">Craetive</button>
+                        <button class="btn btn-light">Open Space</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+<div class="articles">
+    <h4>You really must see our earlier articles </h4>
+</div>
+<div class="container">
+    <div class="row m-5">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 p-2">
+            <div class="article-1">
+                <img src="../static/images/article-1.jpg" alt="">
+                <div class="upper-layer">
+                    <div class="article-btn1">
+                        <button class="btn btn-light">Creative</button> 
+                    </div>
+                    <div class="article-text">
+                        <a href="/blogdetails/{{servicesData.8.new_slug}}">{{servicesData.8.service_title | safe}}</a>
+                        <h4>{{servicesData.8.service_description | slice:":130" | safe}}</h4>
+                        <h5>{{servicesData.8.service_author | safe}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 p-2">
+            <div class="article-1">
+                <img src="../static/images/article-2.jpg" alt="">
+                <div class="upper-layer1">
+                    <div class="article-btn1">
+                        <button class="btn btn-light">Case Study</button> 
+                        <button class="btn btn-light">Creative</button> 
+                        <button class="btn btn-light">Open Space</button> 
+                    </div>
+                    <div class="article-text">
+                        <a href="/blogdetails/{{servicesData.9.new_slug}}">{{servicesData.9.service_title | safe}}</a>
+                        <h5>{{servicesData.9.service_author | safe}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-5">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 p-2">
+            <div class="article-2">
+                <img src="../static/images/article-3.jpg" alt="">
+                <div class="upper-layer2">
+                    <div class="article-btn2">
+                        <button class="btn btn-light">Creative</button> 
+                        <button class="btn btn-light">Furniture</button> 
+                    </div>
+                    <div class="article-text2">
+                        <a href="/blogdetails/{{servicesData.10.new_slug}}">{{servicesData.10.service_title | safe}}</a>
+                        <h5>{{servicesData.10.service_author | safe}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 p-2">
+            <div class="article-3">
+                <img src="../static/images/article-4.jpg" alt="">
+                <div class="upper-layer3">
+                    <div class="article-btn3">
+                        <button class="btn btn-light">Case Study</button> 
+                        <button class="btn btn-light">Open Space</button> 
+                    </div>
+                    <div class="article-text3">
+                        <a href="/blogdetails/{{servicesData.11.new_slug}}">{{servicesData.11.service_title | safe}}</a>
+                        <h4>{{servicesData.11.service_description | slice:":72" | safe}}</h4>
+                        <h5>{{servicesData.11.service_author | safe}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 p-2">
+            <div class="article-2">
+                <img src="../static/images/article-5.jpg" alt="">
+                <div class="upper-layer2">
+                    <div class="article-btn2">
+                        <button class="btn btn-light">Productivity</button> 
+                        <button class="btn btn-light">Open Space</button> 
+                    </div>
+                    <div class="article-text2">
+                        <a href="/blogdetails/{{servicesData.12.new_slug}}">{{servicesData.12.service_title | safe}}</a>
+                        <h4>{{servicesData.12.service_description | slice:":100" | safe}}</h4>
+                        <h5>{{servicesData.12.service_author | safe}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% include "footer.html" %}
